@@ -1,13 +1,18 @@
 {
   "name": "alanpoveda.dev",
+  "homepage":"https://alanpoveda.github.io/alanpoveda.dev",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d build",
+
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "next": "12.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",
